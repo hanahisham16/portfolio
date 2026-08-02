@@ -196,8 +196,6 @@ colorBtns.forEach(function (btn) {
   btn.addEventListener("click", function () {
     var index = this.getAttribute("data-color");
     var selectedTheme = themes[index];
-    console.log(selectedTheme);
-
     document.documentElement.style.setProperty(
       "--color-primary",
       selectedTheme.primary,
